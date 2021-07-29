@@ -50,15 +50,10 @@ public class Program {
 			
 			
 			System.out.println("\n===== TEST 5 SELLER Delete");
-			seller = sellerDao.findById(2);
+			seller = sellerDao.findById(nSeller.getId());
 			sellerDao.deleteById(seller.getId());
-			System.out.println("Delete!");
-			
-			for (int i = 7; i <=30; i++) {
-				sellerDao.deleteById(i);
-				System.out.println("Delete!!! Id: " + i);
-			}
-		
+			System.out.println("Delete! Id: " + seller.getId());
+								
 	}
 
 }
